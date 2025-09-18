@@ -1,13 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junjie Lai Homepage</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">MY HOMEPAGE</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Interests</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="position-indicator"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <img src="assets/avatar.jpg" alt="Junjie Lai">
+                </div>
+                <h1>Junjie Lai</h1>
+                <div class="hero-divider">
+                    <div class="line"></div>
+                    <i class="fas fa-star"></i>
+                    <div class="line"></div>
+                </div>
+                <p>Data Science - Data Engineer - Machine Learning</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Background Image Section -->
+    <section id="home" class="section fixed-bg-section">
+        <div class="fixed-bg-container">
+            <div class="fixed-bg-content">
+                <h2>Data Insights</h2>
+                <p>Passionate about building innovative solutions through data science and engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">INTERESTS</h2>
+            <div class="portfolio-divider">
+                <div class="line-dark"></div>
+                <i class="fas fa-star"></i>
+                <div class="line-dark"></div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" id="portfolio-1">
+                    <img src="assets/portfolio1.png" alt="Portfolio Item 1">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Education</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" id="portfolio-2">
+                    <img src="assets/portfolio2.jpg" alt="Portfolio Item 2">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Data Science</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" id="portfolio-3">
+                    <img src="assets/portfolio3.png" alt="Portfolio Item 3">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Data Engineering</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" id="portfolio-4">
+                    <img src="assets/portfolio4.jpeg" alt="Portfolio Item 4">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Machine Learning</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" id="portfolio-5">
+                    <img src="assets/portfolio5.jpeg" alt="Portfolio Item 5">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Hobby</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" id="portfolio-6">
+                    <img src="assets/portfolio6.png" alt="Portfolio Item 6">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Work Experience</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="about-divider">
+                <div class="line"></div>
+                <i class="fas fa-star"></i>
+                <div class="line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text-center">
+                    <p>I am a Master's student in Information Management at UIUC with a strong background in data science and engineering. I have hands-on experience as a Data Engineer Intern at Alibaba Group and Business Intelligence Intern at Shopee, where I built real-time ETL pipelines, developed ML models, and improved data accuracy by 12%. My expertise spans Python, R, machine learning, and big data technologies like Spark and Flink. I'm passionate about transforming complex data into actionable insights and building scalable data solutions.</p>
+                </div>
+            </div>
+            
+            <div class="about-button">
+                <button class="download-btn" id="download-btn">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </button>
+            </div>
+            
+            <!-- Video for assignment requirement -->
+            <div class="about-video">
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Carousel Section -->
+    <section id="gallery" class="section photography-section">
+        <div class="container">
+            <h2 class="section-title">Photography Gallery</h2>
+            <div class="carousel-divider">
+                <div class="line-dark"></div>
+                <i class="fas fa-camera"></i>
+                <div class="line-dark"></div>
+            </div>
+            
+            <div class="carousel-wrapper">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide active">
+                            <img src="assets/photo1.jpg" alt="Photography 1">
+                            <div class="slide-caption">
+                                <h3>White Sands National Park</h3>
+                                <p>	Otero, NM</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <img src="assets/photo2.jpg" alt="Photography 2">
+                            <div class="slide-caption">
+                                <h3>Long Beach</h3>
+                                <p>Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <img src="assets/photo3.jpg" alt="Photography 3">
+                            <div class="slide-caption">
+                                <h3>United States Capitol</h3>
+                                <p>Washington, D.C.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <button class="carousel-nav prev" id="carousel-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" id="carousel-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LOCATION</h4>
+                    <p>University of Illinois Urbana-Champaign<br>Urbana, IL 61801</p>
+                </div>
+                <div class="footer-section">
+                    <h4>AROUND THE WEB</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Me</h4>
+                    <p>junjiel7@illinois.edu<br>+1 (217) 979-9437</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © Junjie Lai 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="modal-close">&times;</span>
+            <h2 id="modal-title">Portfolio Item</h2>
+            <div class="modal-image" style="display: none;">
+                <img id="modal-image" alt="Portfolio Image">
+            </div>
+            <p id="modal-description">This is a sample portfolio item description.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
 </html>
